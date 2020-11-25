@@ -18,5 +18,9 @@ misc/
 rebar
 releases/
 Install/
+BuildInfo.txt
+do-plugins.escript
+Makefile
+
 
 
