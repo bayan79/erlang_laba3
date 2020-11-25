@@ -5,7 +5,7 @@
 
 С n2o не получалось запускать даже начальное приложение `mad app nitro app1`, поэтому работа сделана на `nitrogen`.
 
-## Установка/проверка:
+### Установка/проверка:
 
 1) Скачать nitrogen:
 
@@ -19,7 +19,7 @@
 
     git clone https://github.com/bayan79/erlang_laba3.git
 
-4) Скопировать erlang_laba3/rebar.config и erlang_laba3/site/* в $PROJECT_PATH/$PROJECT_NAME/rebar.config и $PROJECT_PATH/$PROJECT_NAME/site/* соответственно
+4) Скопировать с заменой `erlang_laba3/rebar.config` в `$PROJECT_PATH/$PROJECT_NAME/` и `erlang_laba3/site/*` в `$PROJECT_PATH/$PROJECT_NAME/site/` соответственно
 
 5) Не забыть ввести куки-ключ в $PROJECT_PATH/$PROJECT_NAME/etc/vm.args для связи узлов кластера
 
@@ -27,19 +27,27 @@
    
    make
 
-## Запуск
+### Запуск
 1) Запустить узлы `host1@127.0.0.1` и `host2@127.0.0.1` c куки-ключом
 
-2) Из папки $PROJECT_PATH/$PROJECT_NAME:
+2) Из папки `$PROJECT_PATH/$PROJECT_NAME`:
 
   bin/nitrogen console
 
 3) Открыть http://localhost:8000/
 
-## Демонстрация
+### Демонстрация
 
-- Добавление #person{name, age}
+ПРи нажатии на кнопку узла отображаются фрагменты таблицы, хранящиеся на данном узле, и их записи
 
-[!Добавление](adding.png)
+- Окно веб-приложения
 
--
+![Добавление](1.png)
+
+- Добавление `#person{name, age}`
+
+![Добавление](adding.png)
+
+- Вывод записей в соответствующих фрагментах
+
+![Добавление](output.png)
